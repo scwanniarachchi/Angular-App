@@ -1,0 +1,57 @@
+<main>
+    <br/>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">order</div>
+                <div class="card-body">
+                    <form [formGroup]="orderForm" (ngSubmit)="order()">
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">name</label>
+                            <div class="col-md-6">
+                                <input formControlName="name" type="text" id="name" class="form-control" name="name" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">phone</label>
+                            <div class="col-md-6">
+                                <input formControlName="phone" type="number" id="phone" class="form-control" name="phone" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">address</label>
+                            <div class="col-md-6">
+                                <input formControlName="address" type="text" id="address" class="form-control" name="address" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">email</label>
+                            <div class="col-md-6">
+                                <input formControlName="email" type="email" id="email" class="form-control" name="email" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Total</label>
+                            <div class="col-md-6">
+                                <input formControlName="total" type="number" id="total" class="form-control" name="total" readonly required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

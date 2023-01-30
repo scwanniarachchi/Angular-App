@@ -1,0 +1,57 @@
+<main>
+    <br/>
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">Item</div>
+                <div class="card-body">
+                    <form [formGroup]="itemForm" (ngSubmit)="item()">
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Item Name</label>
+                            <div class="col-md-6">
+                                <input formControlName="name" type="text" id="name" class="form-control" name="name" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label  class="col-md-4 col-form-label text-md-right">Item Image</label>
+                            <div class="col-md-6">
+                                <input formControlName="image" type="file" class="form-control" name="image" (change)="selectImage($event)" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Price</label>
+                            <div class="col-md-6">
+                                <input formControlName="price" type="number" id="price" class="form-control" name="price" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Description</label>
+                            <div class="col-md-6">
+                                <input formControlName="description" type="text" id="description" class="form-control" name="description" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <label class="col-md-4 col-form-label text-md-right">Availability</label>
+                            <div class="col-md-6">
+                                <input formControlName="availability" type="number" id="availability" class="form-control" name="availability" required>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="form-group row">
+                            <div class="col-md-4"></div>
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-primary">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
