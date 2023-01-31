@@ -13,7 +13,7 @@ describe('FilterPipe', () => {
 
   it('Transform Returns Array with a Object 01', () => {
     result = pipe.transform([{name: '1234'}], "1234");
-
+//commented
     expect(result).toEqual([{name: '1234'}]);
   });
 
